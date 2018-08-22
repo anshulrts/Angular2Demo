@@ -44,3 +44,11 @@ Thumbs.db
 .suo
 *.ide-shm
 *.ide-wal
+/Angular2Demo/obj/Debug
+/Angular2Demo/bin
+
+Angular2Demo/src/app/*.js
+Angular2Demo/src/app/*.map
+
+Angular2Demo/src/*.js
+Angular2Demo/src/*.map
