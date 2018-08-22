@@ -12,6 +12,7 @@ var EmployeeComponent = (function () {
         this.lastName = 'Hopkins';
         this.gender = 'Male';
         this.age = 23;
+        this.columnSpan = 2;
     }
     return EmployeeComponent;
 }());
