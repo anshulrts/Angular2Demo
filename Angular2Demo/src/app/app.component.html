@@ -1,6 +1,12 @@
 ﻿<div>
     <h1>
-        {{pageHeader}}
+        {{pageHeader ? pageHeader : 'No Header'}}
     </h1>
+    <img src="{{imgPath}}" />
+    <div>
+        Welcome {{getFullName()}}!
+    </div>
+    <img [src]="imgPath">
+    <p></p>
     <my-employee></my-employee>
 </div>
