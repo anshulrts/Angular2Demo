@@ -2,8 +2,8 @@
 
 @Component({
     selector: 'list-employee',
-    templateUrl: '/app/employee/employeelist.component.html',
-    styleUrls: ['/app/employee/employeelist.component.css']
+    templateUrl: 'app/employee/employeelist.component.html',
+    styleUrls: ['app/employee/employeelist.component.css']
 })
 
 export class EmployeeListComponent {
