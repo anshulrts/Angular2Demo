@@ -2,6 +2,7 @@
     <h1>
         {{pageHeader ? pageHeader : 'No Header'}}
     </h1>
+    <!--<h2>Image Path binding using string interpolation</h2>-->
     <img src="{{imgPath}}" />
     <div>
         Welcome {{getFullName()}}!
@@ -23,5 +24,7 @@
     Second FullName : <input type="text" [(ngModel)]="secondFullName">
     <br />
     You Entered : {{secondFullName}}
-
+    <br /><br />
+    <h2>ngFor</h2>
+    <list-employee></list-employee>
 </div>
