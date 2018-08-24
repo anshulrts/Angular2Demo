@@ -14,7 +14,14 @@
     <br /><br />
     <my-secondEmployee></my-secondEmployee>
     <br /><br />
+    <h2>Two Way Binding using a combination of Property and Event Binding</h2>
     Fullname : <input type="text" [value]="fullName" (input)="fullName=$event.target.value">
     <br />
     You Entered : {{fullName}}
+    <br /><br />
+    <h2>Two way Binding using ngModel</h2>
+    Second FullName : <input type="text" [(ngModel)]="secondFullName">
+    <br />
+    You Entered : {{secondFullName}}
+
 </div>

@@ -13,6 +13,7 @@ export class AppComponent  {
     lastName: string = 'Dahiya';
 
     fullName = 'Tom Show';
+    secondFullName = 'Albert Mesh';
 
     isBold: boolean = true;
     fontSize: number = 30;
