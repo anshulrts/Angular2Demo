@@ -74,14 +74,12 @@
     <Content Include="src\app\app.component.html" />
     <Content Include="src\app\employee\employee.component.css" />
     <Content Include="src\app\employee\employee.component.html" />
-    <Content Include="src\app\employee\employee.component.js" />
     <Content Include="src\app\employee\employeelist.component.css" />
     <Content Include="src\app\employee\employeelist.component.html" />
     <Content Include="src\app\secondEmployee\secondEmployee.component.css" />
     <Content Include="src\app\secondEmployee\secondEmployee.component.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include="tslint.json" />
-    <Content Include="src\app\employee\employee.component.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
