@@ -12,6 +12,8 @@ export class AppComponent  {
     firstName: string = 'Anshul';
     lastName: string = 'Dahiya';
 
+    fullName = 'Tom Show';
+
     isBold: boolean = true;
     fontSize: number = 30;
     isItalic: boolean = true;

@@ -13,4 +13,8 @@
     <button [ngStyle]="addStyles()" on-click="buttonClicked()">Click Button</button>
     <br /><br />
     <my-secondEmployee></my-secondEmployee>
+    <br /><br />
+    Fullname : <input type="text" [value]="fullName" (input)="fullName=$event.target.value">
+    <br />
+    You Entered : {{fullName}}
 </div>
