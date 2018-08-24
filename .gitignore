@@ -53,5 +53,6 @@ Angular2Demo/src/app/*.map
 Angular2Demo/src/*.js
 Angular2Demo/src/*.map
 
-Angular2Demo/src/app/employee/*.js
-Angular2Demo/src/app/employee/*.map
+
+Angular2Demo/src/app/**/*.js
+Angular2Demo/src/app/**/*.map
