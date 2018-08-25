@@ -56,3 +56,6 @@ Angular2Demo/src/*.map
 
 Angular2Demo/src/app/**/*.js
 Angular2Demo/src/app/**/*.map
+
+/EmployeeWebAPIService/bin
+/EmployeeWebAPIService/obj/Debug
