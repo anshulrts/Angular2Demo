@@ -1,22 +1,26 @@
-﻿import { Component } from '@angular/core'
-import { Employee } from './employee';
+﻿import { Component, OnInit } from '@angular/core'
+import { Employee } from './employee'
+import { EmployeeService } from './employee.service'
 
 @Component({
     selector: 'list-employee',
     templateUrl: 'app/employee/employeelist.component.html',
-    styleUrls: ['app/employee/employeelist.component.css']
+    styleUrls: ['app/employee/employeelist.component.css'],
+    providers: [EmployeeService]
 })
 
-export class EmployeeListComponent {
-    employees: Employee[] = [
-        { code: "Emp100", name: "Anshul", gender: "Male", salary: "2000.45", dateofbirth: "01/30/1993" },
-        { code: "Emp101", name: "Vikram", gender: "Male", salary: "2000", dateofbirth: "07/14/2000" },
-        { code: "Emp102", name: "Shushila", gender: "Female", salary: "2000", dateofbirth: "09/12/1994" },
-        { code: "Emp103", name: "Pooja", gender: "Female", salary: "2000", dateofbirth: "12/13/2009" },
-        { code: "Emp104", name: "Kunal", gender: "Male", salary: "2000.2", dateofbirth: "08/17/1998" }
-    ];
+export class EmployeeListComponent implements OnInit {
+    employees: Employee[];
 
     selectedEmployeeCountRadioButton: string = "All";
+
+    constructor(private _employeeService: EmployeeService) {
+
+    }
+
+    ngOnInit() {
+        this.employees = this._employeeService.getEmployees();
+    }
 
     getAllEmployeeCount(): number {
         return this.employees.length;
