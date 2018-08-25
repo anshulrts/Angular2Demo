@@ -1,4 +1,5 @@
 ﻿import { Component } from '@angular/core'
+import { Employee } from './employee';
 
 @Component({
     selector: 'list-employee',
@@ -7,7 +8,7 @@
 })
 
 export class EmployeeListComponent {
-    employees: any[] = [
+    employees: Employee[] = [
         { code: "Emp100", name: "Anshul", gender: "Male", salary: "2000.45", dateofbirth: "01/30/1993" },
         { code: "Emp101", name: "Vikram", gender: "Male", salary: "2000", dateofbirth: "07/14/2000" },
         { code: "Emp102", name: "Shushila", gender: "Female", salary: "2000", dateofbirth: "09/12/1994" },
