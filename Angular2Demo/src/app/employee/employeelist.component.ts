@@ -15,6 +15,8 @@ export class EmployeeListComponent {
         { code: "Emp104", name: "Kunal", gender: "Male", salary: "2000.2", dateofbirth: "08/17/1998" }
     ];
 
+    selectedEmployeeCountRadioButton: string = "All";
+
     getAllEmployeeCount(): number {
         return this.employees.length;
     }
@@ -25,5 +27,9 @@ export class EmployeeListComponent {
 
     getAllFemaleEmployeeCount(): number {
         return this.employees.filter(row => row.gender === "Female").length;
+    }
+
+    onEmployeeCountRadioButtonChange(onSelectedEmployeeCountRadioButton: string): void {
+        this.selectedEmployeeCountRadioButton = onSelectedEmployeeCountRadioButton;
     }
 }
