@@ -2,13 +2,13 @@
     code: string;
     name: string;
     gender: string;
-    salary: string;
-    dateofbirth: string;
+    annualSalary: string;
+    dateOfBirth: string;
 }
 
 export class Employee implements IEmployee {
-    constructor(public code: string, public name: string, public gender: string, public salary: string,
-        public dateofbirth: string) {
+    constructor(public code: string, public name: string, public gender: string, public annualSalary: string,
+        public dateOfBirth: string) {
 
     }
 }

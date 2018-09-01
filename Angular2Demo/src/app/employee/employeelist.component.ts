@@ -1,5 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core'
-import { Employee } from './employee'
+import { IEmployee } from './employee'
 import { EmployeeService } from './employee.service'
 
 @Component({
@@ -10,7 +10,7 @@ import { EmployeeService } from './employee.service'
 })
 
 export class EmployeeListComponent implements OnInit {
-    employees: Employee[];
+    employees: IEmployee[];
 
     selectedEmployeeCountRadioButton: string = "All";
 
@@ -19,7 +19,8 @@ export class EmployeeListComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.employees = this._employeeService.getEmployees();
+        this._employeeService.getEmployees()
+            .subscribe((employeeData) => this.employees = employeeData);
     }
 
     getAllEmployeeCount(): number {
