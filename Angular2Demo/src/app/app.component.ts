@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
     template:   `
                 <div style="padding:5px">
                     <ul class="nav nav-tabs">
-                        <li><a routerLink="home">Home</a></li>
-                        <li><a routerLink="employees">Employees</a></li>
+                        <li routerLinkActive="active"><a routerLink="home">Home</a></li>
+                        <li routerLinkActive="active"><a routerLink="employees">Employees</a></li>
                     </ul>
                     <router-outlet></router-outlet>
                 </div>
