@@ -1,8 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: 'app/app.component.html'
+    selector: 'my-app',
+    //templateUrl: 'app/app.component.html',
+    template:   `
+                <div style="padding:5px">
+                    <ul class="nav nav-tabs">
+                        <li><a routerLink="home">Home</a></li>
+                        <li><a routerLink="employees">Employees</a></li>
+                    </ul>
+                    <router-outlet></router-outlet>
+                </div>
+                `
 })
 export class AppComponent  {
     pageHeader: string = 'Employee Details';
