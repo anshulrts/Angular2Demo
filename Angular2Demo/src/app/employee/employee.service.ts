@@ -18,6 +18,12 @@ export class EmployeeService {
             .catch(this.handleError);
     }
 
+    getEmployeeByCode(empCode: string): Observable<IEmployee> {
+        return this._http.get("http://localhost:63257/api/employees/" + empCode)
+            .map((response: Response) => <IEmployee>response.json())
+            .catch(this.handleError);
+    }
+
     handleError(error: Response) {
         console.log(error);
         return Observable.throw(error);
